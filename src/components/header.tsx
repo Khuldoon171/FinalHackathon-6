@@ -1,7 +1,7 @@
 import React from "react";
 import Furniro from "../../public/Furniro.png";
 import Image from "next/image";
-import { IoSearchOutline } from "react-icons/io5";
+import { IoMenu, IoSearchOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
@@ -10,55 +10,61 @@ import background from "../../public/background.png";
 const Header = () => {
   return (
     // main div
-    <div className="w-full h-[100] bg-[#FFFFFF] border-2 ">
-      {/* back-ground image */}
-      <div
-        className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/background.png')" }}
-      >
-        {/* Discover Our New Collection */}
-        <p className="w-[643px] ml-[739px] mt-[190px] h-[443px] bg-[#FFF3E3]">
-          <br />
-          <b className="ml-[40px]">New Arrival</b>{" "}
-          <p className="text-[52px] ml-[40px] font-bold text-[#B88E2F]">
-            Discover Our New Collection
-          </p>
-          <p className="ml-[40px] w-[546px] h-[52px] text-[18px] font-medium ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
-          </p>
-          <br />
-          <button className="w-[222px] h-[74px] ml-[40px] mt-[60px] bg-[#B88E2F]">
-            BUY NOW
-          </button>
+    <div className="w-full h-auto bg-white border-2">
+    {/* Background Image Section */}
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
+      style={{ backgroundImage: "url('/background.png')" }}
+    >
+      <div className="bg-[#FFF3E3] p-6 sm:p-8 md:w-[80%] lg:w-[50%] xl:w-[40%] rounded-lg shadow-lg text-center">
+        <p className="text-xl font-bold">New Arrival</p>
+        <p className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[52px] font-bold text-[#B88E2F] mt-4">
+          Discover Our New Collection
         </p>
-      </div>
-      {/* Nav Item div */}
-      <div className="w-[1286] h-[41px] ml-[54px] mt-[29px] flex justify-between fixed top-0">
-        {/* image fur */}
-        <Image
-          className="w-[185] h-[41px]"
-          src={Furniro}
-          alt="template"
-          width={150}
-          height={150}
-        />
-
-        <ul className="text-black font-extrabold font-poppins flex gap-[75px] ml-[30rem]">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        {/* Templates */}
-        <span className="flex gap-10 font-medium ml-[30rem]">
-          <IoPersonOutline className="w-[28px] h-[28px]" />
-          <IoSearchOutline className="w-[28px] h-[28px]" />
-          <IoIosHeartEmpty className="w-[28px] h-[28px]" />
-          <IoCartOutline className="w-[28px] h-[28px]" />
-        </span>
+        <p className="text-sm sm:text-base md:text-lg mt-4 text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+          luctus nec ullamcorper mattis.
+        </p>
+        <button className="w-full sm:w-auto px-6 py-3 sm:h-[74px] bg-[#B88E2F] text-white font-medium mt-8 rounded-md">
+          BUY NOW
+        </button>
       </div>
     </div>
+  
+    {/* Navigation Bar */}
+    <div className="w-full h-auto flex items-center justify-between px-6 sm:px-12 md:px-20 py-4 fixed top-0 bg-white shadow-md z-10">
+      {/* Logo */}
+      <Image
+        className="w-[100px] sm:w-[120px] h-auto"
+        src={Furniro}
+        alt="template"
+        width={150}
+        height={150}
+      />
+  
+      {/* Navigation Links */}
+      <ul className="hidden md:flex items-center space-x-6 font-extrabold text-sm md:text-base lg:text-lg">
+        <li className="hover:text-[#B88E2F] cursor-pointer transition-all">Home</li>
+        <li className="hover:text-[#B88E2F] cursor-pointer transition-all">Shop</li>
+        <li className="hover:text-[#B88E2F] cursor-pointer transition-all">About</li>
+        <li className="hover:text-[#B88E2F] cursor-pointer transition-all">Contact</li>
+      </ul>
+  
+      {/* Mobile Menu Button */}
+      <div className="md:hidden">
+        <IoMenu className="w-6 h-6 text-gray-800" />
+      </div>
+  
+      {/* Icons */}
+      <div className="flex items-center space-x-4 sm:space-x-6">
+        <IoPersonOutline className="w-6 h-6 text-gray-800" />
+        <IoSearchOutline className="w-6 h-6 text-gray-800" />
+        <IoIosHeartEmpty className="w-6 h-6 text-gray-800" />
+        <IoCartOutline className="w-6 h-6 text-gray-800" />
+      </div>
+    </div>
+  </div>
+
   );
 };
 

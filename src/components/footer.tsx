@@ -3,45 +3,57 @@ import React from "react";
 const Footer = () => {
   return (
     // Main div
-    <div className="w-full h-[505px]">
-      {/* content div */}
-      <div className="w-[1240px] h-[419px] mt-[48 px] ml-[100px]">
-        <p className="text-[24px] font-bold mt-[48px]">
-          Funiro.
-          <br />
-          <br />
-          <p className="w-[285px] h-[72px] opacity-30 font-normal text-[16px]">
-            400 University Drive Suite 200 Coral <br /> Gables,
-            <br />
-            FL 33134 USA
-          </p>
-          {/* Links Content */}
-          <ul className="text-[16px] font-medium ml-[525px] -mt-[130px]">
-            <li className="opacity-30">Links</li>
-            <li className="mt-[40px]">Home</li>
-            <li className="mt-[40px]">Shop</li>
-            <li className="mt-[40px]">About</li>
-            <li className="mt-[40px]">Contact</li>
-          </ul>
-          {/* Help content */}
-          <ul className="text-[16px] font-medium ml-[735px] -mt-[275px]">
-            <li className="opacity-30">Help</li>
-            <li className="mt-[40px]">Payment Options</li>
-            <li className="mt-[40px]">Returns</li>
-            <li className="mt-[40px]">Privacy Policies</li>
-          </ul>
-          {/* News Letter */}
-          <ul className="text-[16px] font-medium ml-[947px] -mt-[215px]">
-            <li className="opacity-30">Newsletter</li>
-            </ul>
-            <br />
-            <button className=" ml-[947px] text-[14px] font-normal underline ">
-            <input className="underline space-x-4 mr-3"  placeholder="Enter Your Email Address" type="text"/> SUBSCRIBE</button>
-        </p>
-        <p className="mt-[330px] text-[16px] font-normal">2023 furino. All rights reverved</p>
-
+    <div className="w-full h-auto">
+    {/* Main Content */}
+    <div className="max-w-[1240px] mx-auto px-4 py-6">
+      <p className="text-[24px] font-bold mb-6">
+        Funiro.
+        <br />
+        <span className="block w-[285px] opacity-30 text-[16px]">
+          400 University Drive Suite 200 Coral <br />
+          Gables, FL 33134 USA
+        </span>
+      </p>
+      
+      {/* Flexbox for Links, Help, and Newsletter */}
+      <div className="flex flex-wrap justify-between">
+        {/* Links Section */}
+        <ul className="mb-6">
+          <li className="opacity-30 text-[16px] font-medium">Links</li>
+          <li className="mt-2">Home</li>
+          <li className="mt-2">Shop</li>
+          <li className="mt-2">About</li>
+          <li className="mt-2">Contact</li>
+        </ul>
+        
+        {/* Help Section */}
+        <ul className="mb-6">
+          <li className="opacity-30 text-[16px] font-medium">Help</li>
+          <li className="mt-2">Payment Options</li>
+          <li className="mt-2">Returns</li>
+          <li className="mt-2">Privacy Policies</li>
+        </ul>
+        
+        {/* Newsletter Section */}
+        <div>
+          <p className="opacity-30 text-[16px] font-medium mb-2">Newsletter</p>
+          <div className="flex items-center">
+            <input
+              className="border border-gray-300 p-2 text-[14px] flex-1"
+              placeholder="Enter Your Email Address"
+              type="text"
+            />
+            <button className="ml-2 text-[14px] underline font-normal">SUBSCRIBE</button>
+          </div>
+        </div>
       </div>
+      
+      {/* Footer Text */}
+      <p className="text-[16px] font-normal text-center mt-6">
+        2023 Funiro. All rights reserved.
+      </p>
     </div>
+  </div>
   );
 };
 
