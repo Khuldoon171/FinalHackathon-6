@@ -11,6 +11,8 @@ import Products1 from "../../public/my stuff/Products1.png";
 import Products2 from "../../public/my stuff/Products2.png";
 import Products3 from "../../public/my stuff/Products3.png";
 import Products4 from "../../public/my stuff/Products4.png";
+import ProductInner from '../../public/my stuff/ProductInner.png'
+import Furniture1 from '../../public/my stuff/Furniture1.png'
 
 const Group115 = () => {
   return (
@@ -142,14 +144,48 @@ export const Product = () => {
 export const Inspir=()=>{
   return(
       // inspiration div
-    <div className="w-[1760px] md:w-[1760px] h-[670px]">
-      <h1 className="w-[1760px] md:w-[422px] h-[151px] text-[40px] font-bold">
-      50+ Beautiful rooms 
-      inspiration
-      </h1>
-      <p className="w-[368px] md:w-[368px] h-[48px]"></p>
-    </div>
+    <div className="w-full h-auto">
+  <h1 className="w-full md:w-[422px] h-auto text-[30px] md:text-[40px] text-center md:text-left mx-auto md:ml-[650px] mt-[6rem] md:mt-[15rem] font-bold">
+    50+ Beautiful Rooms Inspiration
+  </h1>
+  <p className="w-[90%] md:w-[368px] h-auto text-[14px] md:text-[16px] mx-auto md:ml-[650px] mt-4 md:-mt-1 text-center md:text-left">
+    Our designer already made a lot of beautiful prototypes of rooms that inspire you
+  </p>
+  <div className="w-full flex justify-center md:block">
+    <button className="w-[176px] h-[48px] bg-[#B88E2F] mt-6 md:mt-10 md:ml-[650px] text-[16px] font-semibold text-[#FFFFFF]">
+      Explore More
+    </button>
+  </div>
+  {/* Image div */}
+  <div className="w-full mt-10 md:-mt-[20rem] flex justify-center md:justify-end">
+    <Image
+      className="w-[90%] md:w-[1196px] h-auto"
+      src={ProductInner}
+      alt="product-image"
+      width={404}
+      height={582}
+    />
+  </div>
+</div>
+
   )
+}
+
+export const Furniture = ()=>{
+  return(
+    // Furnitur div
+    <div className="w-full max-w-[1799px] h-auto mx-auto mt-32 px-4">
+    <Image 
+      className="w-full h-auto" 
+      src={Furniture1} 
+      alt="Furniture image" 
+      width={1500} 
+      height={1500} 
+    />
+  </div>
+  
+  )
+
 }
 
 export default Group115;
