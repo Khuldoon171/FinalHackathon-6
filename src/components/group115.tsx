@@ -13,6 +13,7 @@ import Products3 from "../../public/my stuff/Products3.png";
 import Products4 from "../../public/my stuff/Products4.png";
 import ProductInner from '../../public/my stuff/ProductInner.png'
 import Furniture1 from '../../public/my stuff/Furniture1.png'
+import Footer from "./footer";
 
 const Group115 = () => {
   return (
@@ -145,14 +146,14 @@ export const Inspir=()=>{
   return(
       // inspiration div
     <div className="w-full h-auto">
-  <h1 className="w-full md:w-[422px] h-auto text-[30px] md:text-[40px] text-center md:text-left mx-auto md:ml-[650px] mt-[6rem] md:mt-[15rem] font-bold">
+  <h1 className="w-full md:w-[422px] h-auto text-[30px] md:text-[39px] text-center md:text-left mx-auto md:ml-[430px] mt-[6rem] md:mt-[15rem] font-bold">
     50+ Beautiful Rooms Inspiration
   </h1>
-  <p className="w-[90%] md:w-[368px] h-auto text-[14px] md:text-[16px] mx-auto md:ml-[650px] mt-4 md:-mt-1 text-center md:text-left">
+  <p className="w-[90%] md:w-[368px] h-auto text-[14px] md:text-[16px] mx-auto md:ml-[430px] mt-4 md:-mt-1 text-center md:text-left">
     Our designer already made a lot of beautiful prototypes of rooms that inspire you
   </p>
   <div className="w-full flex justify-center md:block">
-    <button className="w-[176px] h-[48px] bg-[#B88E2F] mt-6 md:mt-10 md:ml-[650px] text-[16px] font-semibold text-[#FFFFFF]">
+    <button className="w-[176px] h-[48px] bg-[#B88E2F] mt-6 md:mt-10 md:ml-[430px] text-[16px] font-semibold text-[#FFFFFF]">
       Explore More
     </button>
   </div>
@@ -182,6 +183,7 @@ export const Furniture = ()=>{
       width={1500} 
       height={1500} 
     />
+    <Footer/>
   </div>
   
   )
