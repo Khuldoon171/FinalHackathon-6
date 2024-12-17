@@ -5,9 +5,11 @@ import Group63 from '../../../public/my stuff/Group63.png'
 import Frame79 from '../../../public/my stuff/Frame79.png'
 import Frame161 from '../../../public/my stuff/Frame161.png'
 import Footer from '@/components/footer'
+import Header from '@/components/header'
 const Shop = () => {
   return (
     <div className="w-full h-auto">
+      <Header/>
     {/* Background Image */}
     <div className="w-full h-[316px]">
       <Image

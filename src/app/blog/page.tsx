@@ -4,10 +4,12 @@ import Group185 from "../../../public/my stuff/Group185.png";
 import Image from "next/image";
 import Frame161 from "../../../public/my stuff/Frame161.png";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const Blog = () => {
   return (
     <div className="w-full h-auto">
+      <Header/>
       {/* Blog Image */}
       <div className="w-full h-[316px] sm:h-[400px] md:h-[500px]">
         <Image

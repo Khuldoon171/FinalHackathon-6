@@ -14,10 +14,12 @@ import Products4 from "../../public/my stuff/Products4.png";
 import ProductInner from '../../public/my stuff/ProductInner.png'
 import Furniture1 from '../../public/my stuff/Furniture1.png'
 import Footer from "./footer";
+import Header from "./header";
 
 const Group115 = () => {
   return (
     <div className="md:w-full w-full px-4">
+      <Header/>
   {/* Header Section */}
   <h1 className="text-2xl md:text-4xl font-bold text-center mt-12">
     Browse The Range

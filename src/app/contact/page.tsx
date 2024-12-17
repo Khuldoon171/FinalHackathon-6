@@ -4,9 +4,11 @@ import Image from 'next/image'
 import FormC from '../../../public/my stuff/FormC.png'
 import Footer from '@/components/footer'
 import Frame161 from "../../../public/my stuff/Frame161.png";
+import Header from '@/components/header'
 const Contact = () => {
   return (
     <div className='w-ful h-auto'>
+      <Header/>
       {/* Contact image */}
       <div className="w-full h-[316px] sm:h-[400px] md:h-[500px]">
         <Image className="w-full h-full object-cover"

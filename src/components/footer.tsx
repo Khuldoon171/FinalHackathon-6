@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     // Main div
-    <div className="w-full h-auto md:mt-10 md:ml-40">
+    <div className="w-full h-auto md:mt-10 md:-ml-[200px]">
   {/* Main Content */}
   <div className="max-w-[1240px] mx-auto px-4 py-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
     <p className="text-[24px] font-bold mb-6">
