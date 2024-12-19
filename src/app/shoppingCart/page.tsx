@@ -38,11 +38,10 @@ const ShoppingPage = () => {
           height: "500px",
         }}
       >
-        <button className="w-[140px] h-[50px] font-extrabold text-xl border-[1px] border-neutral-950 rounded-full mt-[110rem] ml-[75rem]  text-black">
+        <button className="md:w-[140px] md:h-[50px] font-extrabold text-xl border-[1px] border-neutral-950 rounded-full mt-[110rem] md:ml-[75rem]  text-black">
           <Link href={"/cart"}>Cart</Link>
         </button>
       </h1>
-      
     </div>
   );
 };
