@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["cdn.sanity.io"],
+  },
+};
 
-export default nextConfig;
+export default nextConfig;  // 👈 Change this line

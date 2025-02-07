@@ -15,6 +15,7 @@ import ProductInner from '../../public/my stuff/ProductInner.png'
 import Furniture1 from '../../public/my stuff/Furniture1.png'
 import Footer from "./footer";
 import Header from "./header";
+import Link from "next/link";
 
 const Group115 = () => {
   return (
@@ -65,6 +66,10 @@ const Group115 = () => {
 };
 
 export const Product = () => {
+  function setVisibleCount(length: any) {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     // Our Product Div
     <div className="md:w-full w-full border mt-8 px-4 py-6">
@@ -138,7 +143,7 @@ export const Product = () => {
 
   {/* Button */}
   <button className="mt-6 mx-auto block w-[200px] h-[48px] border text-center text-[#B88E2F] border-[#B88E2F] rounded-lg hover:bg-[#B88E2F] hover:text-white">
-    Show More
+  Show More
   </button>
 </div>
   );
