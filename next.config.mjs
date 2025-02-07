@@ -5,4 +5,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;  // 👈 Change this line
+export default nextConfig;  
