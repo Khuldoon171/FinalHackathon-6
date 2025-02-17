@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ProductDetails = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-20">
+    <div className="container md:mx-auto px-4 lg:px-20">
       {/* Breadcrumbs */}
       <nav className="text-gray-600 mb-6">
         <span className="text-gray-400">Home / Shop / </span>
